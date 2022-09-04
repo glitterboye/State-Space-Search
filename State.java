@@ -1,6 +1,5 @@
 /*
  * State.java
- * Copyright (c) 2019 Mark Maloof.  All Rights Reserved.  See LICENSE.
  */
 
 public abstract class State extends Object implements Comparable<State> {

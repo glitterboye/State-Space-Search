@@ -1,6 +1,5 @@
 /*
  * Action.java
- * Copyright (c) 2019 Mark Maloof.  All Rights Reserved.  See LICENSE.
  */
 
 public abstract class Action extends Object implements Comparable<Action> {

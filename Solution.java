@@ -2,7 +2,6 @@ import java.util.LinkedList;
 
 /*
  * Solution.java
- * Copyright (c) 2019 Mark Maloof.  All Rights Reserved.  See LICENSE.
  */
 
 public class Solution {
