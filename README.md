@@ -5,7 +5,8 @@ This is a project written in **Java 11** that compares three common state-space 
 - Uniform Cost Search (UCS)
 - Greedy Best First Search
 
-The structure of the files allows this program to be applied to any abstract search problem. For searching through France, classes are derived and implemented from abstract template classes. E.g. `Action.java` -> `FrenchAction.java`
+The structure of the files allows this program to be applied to any abstract search problem. For searching through France, classes are derived and implemented from abstract template classes.
+  E.g. `Action.java` -> `FrenchAction.java`
 
 The Problem is derived given a weighted, directed graph stored in `france.txt`
 What the graph looks like:
