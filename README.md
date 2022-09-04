@@ -10,6 +10,5 @@ What the graph looks like:
 
 <img src="images/france.gif" />
 
-The program is also given a list of French cities' lattitude and longitudes. This allows some search algorithms to estimate the chord distance between two coordinated using the Haversine Formula 
+The program is also given a list of French cities' lattitude and longitudes. This allows some search algorithms to estimate the chord distance between two coordinated using the [Haversine Formula](https://en.wikipedia.org/wiki/Haversine_formula)
 
-<img src="images/haversine.png" width="250"/>
