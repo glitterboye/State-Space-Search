@@ -12,9 +12,8 @@ LIBS =
 
 all: $(OBJS)
 
-# modify the zip command so it's appropriate for your project
 submit:
-	zip submit.zip $(SRCS) Makefile README HONOR france.txt
+	zip submit.zip $(SRCS) Makefile README france.txt
 
 clean:
 	rm -f *.class
