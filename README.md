@@ -12,4 +12,4 @@ What the graph looks like:
 
 The program is also given a list of French cities' lattitude and longitudes. This allows some search algorithms to estimate the chord distance between two coordinated using the Haversine Formula 
 
-<img src="images/haversine.png" width="150"/>
+<img src="images/haversine.png" width="250"/>
