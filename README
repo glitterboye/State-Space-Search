@@ -1,0 +1,13 @@
+Place these averages in a file named README. Write a paragraph that compares and contrasts the search algorithms in terms of these statistics. What differences or similarities do you see between the informed search algorithm and the optimal search algorithms? What differences or similarities do you see between the two optimal search algorithms. Include this file with your submission. 
+
+        EXPLORED EXPANDED MAINTAINED Optimal Sol
+UCS Total   111     339     123         7
+UCS Avg     15.9    48.4    17.6        -
+
+GBFS Total  69      218     153         2
+GBFS AVG    9.9     31.1    21.9        -
+
+AStar Total 101     337     138         7
+AStar AVG   14.4    48.1    19.7        -
+
+According to my results, UCS and AStar have very similar performances and find the same number of optimal solutions to State-Space Search. I agree with this trend because, at an algorithmic level, the only difference between UCS and AStar is a small change in their respective Heuristic evaluation functions. Each algorithm bases the ordering of its frontier (PriorityQueue) by computing the path cost at the node (G(n)) and combining that with an estimated distance to the goal state. My results display that UCS and AStar are optimal search algorithms, and my output shows that AStar explores fewer nodes and maintains more nodes than UCS to arrive at the optimal solution. On the other hand, GBFS rarely finds the optimal solution so it is not an optimal algorithm, but computes a non-optimal solution faster (with less memory) than UCS and AStar. On average, GBFS explores and expands fewer nodes while maintaining more nodes compared to UCS and AStar.

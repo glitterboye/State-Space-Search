@@ -1,0 +1,27 @@
+    public Solution ucs(Problem p) {
+        Solution s = new Solution();
+
+        Node n = new Node(p.getInitialState());
+        frontier.add(n);
+        reached.put(n.getState(), n);
+        while (!frontier.isEmpty()) {
+            n = frontier.remove();
+
+            if (p.goalTest(n.getState())) {
+                return s;// new Solution(t);
+            }
+            for (Action a : p.getActions(n.getState())) {
+                State st = p.getResult(n.getState(), a);
+                double cost = n.getCost() + p.getStepCost(n.getState(), a);
+
+                if (!(reached.contains(st)) || cost < reached.get(st).getCost()) {
+                    Node c = new Node(st, n, a, cost);
+                    reached.put(st, c);
+                    frontier.add(c);
+                }
+            }
+        }
+        // return FAIL
+        return s;
+
+    }
